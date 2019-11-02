@@ -1,0 +1,35 @@
+.container {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.phone-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    margin: 15px auto;
+}
+
+.phone-container button {
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.reset, .change-mode, .delete-value {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.result {
+    width: 220px;
+    height: 15px;
+    padding: 5px;
+    margin: 25px auto 0;
+    border: 1px solid grey;
+    white-space: pre;
+}
+
