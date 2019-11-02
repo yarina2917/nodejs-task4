@@ -16,9 +16,7 @@ function createPhone() {
     setValues(container);
 
     function clickHandler(event) {
-
         if (event.target.id !== '') {
-
             clearTimeout(valuesTimeout);
             clearTimeout(mainTimeout);
 
@@ -31,7 +29,9 @@ function createPhone() {
                     } else {
                         currentIndex = currentIndex + 1 > valuesArr.length - 1 ? 1 : currentIndex + 1;
                     }
-                    valuesTimeout = setTimeout(() => result.innerHTML += valuesArr[currentIndex] === '_' ? ' ' : valuesArr[currentIndex], 300);
+                    valuesTimeout = setTimeout(() => {
+                        result.innerHTML += valuesArr[currentIndex] === '_' ? ' ' : valuesArr[currentIndex]
+                    }, 300);
                 }
             } else {
                 valuesTimeout = setTimeout(() => result.innerHTML += event.target.id, 300);
