@@ -17,7 +17,7 @@ function listToArray(list, arr = []) {
 
 function arrayToList(arr, obj = {}, i = 0) {
     return i < arr.length - 1 ? {value: +arr[i], next: arrayToList(arr, obj.next, i + 1)}
-           : {value: arr[i], next: null}
+           : {value: +arr[i], next: null}
 }
 
 const list1 = {
