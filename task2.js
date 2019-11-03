@@ -6,7 +6,6 @@
 function linkedList(list1, list2) {
     let list1Arr = listToArray(list1).reverse().join('');
     let list2Arr = listToArray(list2).reverse().join('');
-
     let listArr = (+list1Arr + +list2Arr).toString().split('');
     return arrayToList(listArr);
 }
@@ -44,6 +43,3 @@ const list2 = {
 };
 
 console.log(linkedList(list1, list2));
-
-
-
