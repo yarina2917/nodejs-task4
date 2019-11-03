@@ -9,16 +9,14 @@ function pow(x, n) {
             return result.toFixed(5)
         }
     } else {
-        console.log('error: -100.0 < x < 100.0, n must be an integer')
+        console.log('error: -100.0 < x < 100.0, n must be an integer');
     }
 }
 
 function countPow(x, n) {
-    return n === 1 ? x : x * countPow(x, n - 1);
+    return n === 1 ? x : x * countPow(x, n - 1)
 }
 
 console.log(pow(2.00000, 10));
 console.log(pow(2.10000, 3));
 console.log(pow(2.00000, -2));
-
-
