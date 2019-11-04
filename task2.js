@@ -4,9 +4,9 @@
 // Explanation: 342 + 465 = 807.
 
 function linkedList(list1, list2) {
-    let list1Arr = listToArray(list1).reverse().join('');
-    let list2Arr = listToArray(list2).reverse().join('');
-    let listArr = (+list1Arr + +list2Arr).toString().split('');
+    let list1Value = listToArray(list1).reverse().join('');
+    let list2Value = listToArray(list2).reverse().join('');
+    let listArr = (+list1Value + +list2Value).toString().split('').reverse();
     return arrayToList(listArr);
 }
 
